@@ -1,0 +1,3 @@
+## System Architecture
+
+System architecture refers to the fundamental design and layout of a computer system's components, focusing on how hardware and software interact to perform computing tasks efficiently. It includes the configuration and management of essential hardware elements such as CPUs, memory, mass storage devices, input/output interfaces, and peripheral devices. This structure also involves understanding system resources like I/O ports, IRQs, and DMA channels, as well as using tools like `lspci`, `lsusb`, and `modprobe` to inspect and configure hardware. Additionally, core Linux frameworks such as `sysfs`, `udev`, and `dbus` play a critical role in device management and communication within the system.
