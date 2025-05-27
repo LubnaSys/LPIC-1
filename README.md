@@ -13,19 +13,19 @@ This repository serves as a dedicated space for my learning journey and assignme
     * [Tools and utilities to manipulate USB devices](modules/101_1_System_Architecture.md#tools-and-utilities-to-manipulate-usb-devices)
     * [Conceptual understanding of sysfs, udev and dbus](modules/101_1_System_Architecture.md#conceptual-understanding-of-sysfs-udev-and-dbus)
  * [101.2 Boot the system ](modules/101_2_Boot_System.md#1012-lesson-1)
-  * [Provide common commands to the boot loader and options to the kernel at boot time](modules/101_2_Boot_System.md#provide-common-commands-to-the-boot-loader-and-options-to-the-kernel-at-boot-time)
-  * [Demonstrate knowledge of the boot sequence from BIOS/UEFI to boot completion](modules/101_2_Boot_System.md#demonstrate-knowledge-of-the-boot-sequence-from-biosuefi-to-boot-completion)
-  * [Understanding of SysVinit and systemd](modules/101_2_Boot_System.md#understanding-of-sysvinit-and-systemd)
-  * [Awareness of Upstart](modules/101_2_Boot_System.md#awareness-of-upstart)
-  * [Check boot events in the log files](modules/101_2_Boot_System.md#check-boot-events-in-the-log-files)
- * [101.3 Change runlevels / boot targets and shutdown or reboot system](modules/101_3_Change_Runlevels.md#1013-lesson-1)
+    * [Provide common commands to the boot loader and options to the kernel at boot time](modules/101_2_Boot_System.md#provide-common-commands-to-the-boot-loader-and-options-to-the-kernel-at-boot-time)
+    * [Demonstrate knowledge of the boot sequence from BIOS/UEFI to boot completion](modules/101_2_Boot_System.md#demonstrate-knowledge-of-the-boot-sequence-from-biosuefi-to-boot-completion)
+    * [Understanding of SysVinit and systemd](modules/101_2_Boot_System.md#understanding-of-sysvinit-and-systemd)
+    * [Awareness of Upstart](modules/101_2_Boot_System.md#awareness-of-upstart)
+    * [Check boot events in the log files](modules/101_2_Boot_System.md#check-boot-events-in-the-log-files)
+    * [101.3 Change runlevels / boot targets and shutdown or reboot system](modules/101_3_Change_Runlevels.md#1013-lesson-1)
    
 * [102 Linux Instalation and Package Management]
- * [102.1 Design hard disk layout](modules2/102_1_Design-hard_disk-layout)
- * [102.2 Install a boot manager]
- * [102.3 Manage shared libraries]
- * [102.4 Use Debian package management]
- * [102.5 Use RPM and YUM package management]
- * [102.6 Linux as a virtulization guest]
+    * [102.1 Design hard disk layout](modules2/102_1_Design-hard_disk-layout)
+    * [102.2 Install a boot manager]
+    * [102.3 Manage shared libraries]
+    * [102.4 Use Debian package management]
+    * [102.5 Use RPM and YUM package management]
+    * [102.6 Linux as a virtulization guest]
   
 ---
