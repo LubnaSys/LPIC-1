@@ -6,6 +6,7 @@ If it outputs systemd, you are using systemd.
 If it outputs init (and you're on a modern system), it's still likely systemd, but init is a symlink to it.
 If it outputs upstart, you're using Upstart.
 If it outputs runit, you're using Runit
+
 ---
 ## 📋 Systemd: Runlevels / Boot Targets and System Control
 
