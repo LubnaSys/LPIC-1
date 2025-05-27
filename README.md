@@ -4,7 +4,7 @@ This repository serves as a dedicated space for my learning journey and assignme
 
 ---
 ## Table of Contents
-*[101 System Architecture]
+*[101 System Architecture]<br>
 ** [101.1 Determine and configure hardware settings](modules/101_1_System_Architecture.md#1011-determine-and-configure-hardware-settings)
     ** [Enable and disable integrated peripherals](modules/101_1_System_Architecture.md#enable-and-disable-integrated-peripherals)
     ** [Differentiate between the various types of mass storage devices](modules/101_1_System_Architecture.md#differentiate-between-the-various-types-of-mass-storage-devices)
