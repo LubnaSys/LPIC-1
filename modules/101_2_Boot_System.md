@@ -254,3 +254,26 @@ o Start service: sudo systemctl start [service_name]
 o Stop service: sudo systemctl stop [service_name] 
 o Enable on boot: sudo systemctl enable [service_name] 
 o Check status: systemctl status [service_name] 
+
+---
+## 4. Awareness of Upstart
+Upstart is an event-based init system designed to replace the traditional SysVinit in Linux. Unlike SysVinit, which relies on sequential startup scripts, Upstart handles system services asynchronously by responding to events (such as hardware changes or service dependencies). While systemd has largely replaced Upstart in modern Linux distributions, understanding Upstart remains relevant for the LPIC-1 certification, particularly for legacy systems and exam scenarios.
+
+### What is Upstart?
+Upstart was developed by Canonical (Ubuntu) and introduced in 2006 to overcome limitations in SysVinit, such as:
+
+Slow, sequential boot process.
+
+Difficulty managing dynamic events (e.g., plugging in a USB drive).
+
+Complex dependency handling.
+
+Upstart uses job definitions (stored in /etc/init/*.conf) and responds to events, allowing faster and more flexible service management. However, due to the rise of systemd, Upstart is now mostly obsolete.
+
+| Feature             | Upstart                                     | Traditional SysVinit                            |
+| :------------------ | :------------------------------------------ | :---------------------------------------------- |
+| Init System         | Event-based, handles tasks asynchronously   | Script-based, starts tasks sequentially         |
+| LPIC-1 Focus        | Less emphasized (modern distros use systemd) but may appear in older exams | Core topic (script locations, runlevels, etc.)  |
+| Key Commands        | `initctl`, `start`, `stop`, `status`        | `service`, `chkconfig`, `/etc/init.d/` scripts  |
+| Configuration       | `/etc/init/*.conf` files                    | `/etc/inittab`, `/etc/rc.d/` directories        |
+| Relevance           | Legacy (replaced by systemd in most distros)| Foundational for understanding Linux boot process |
