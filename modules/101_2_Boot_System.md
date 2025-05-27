@@ -277,3 +277,51 @@ Upstart uses job definitions (stored in /etc/init/*.conf) and responds to events
 | Key Commands        | `initctl`, `start`, `stop`, `status`        | `service`, `chkconfig`, `/etc/init.d/` scripts  |
 | Configuration       | `/etc/init/*.conf` files                    | `/etc/inittab`, `/etc/rc.d/` directories        |
 | Relevance           | Legacy (replaced by systemd in most distros)| Foundational for understanding Linux boot process |
+
+---
+## 5. Check boot events in log files
+
+### 1. Check `systemd` Boot Logs (Most Modern Linux Systems)
+`journalctl -b`
+
+Shows the boot log for the current boot.
+
+For previous boots, use:
+`journalctl --list-boots  # List all boots`
+`journalctl -b -1         # Logs from the previous boot`
+`journalctl -b -2         # Logs from two boots ago`
+
+### 2. Check `dmesg` (Kernel Ring Buffer)
+`dmesg | less`
+
+Displays kernel messages, including hardware detection and boot process.
+
+For boot-specific messages:
+`dmesg --human --color --reltime`
+
+### 3. Check /var/log/boot.log (Older Systems)
+`cat /var/log/boot.log`
+
+Some distributions (like older Ubuntu versions) log boot messages here.
+
+### 4. Check /var/log/syslog or /var/log/messages
+`grep -i "boot\|startup" /var/log/syslog`
+
+or
+`less /var/log/messages`
+
+General system logs may contain boot-related events.
+
+### 5. Check last Command for Reboot History
+`last reboot`
+
+Shows system reboot history (logged via utmp/wtmp).
+
+### 6. Check UEFI/BIOS Boot Logs (If Available)
+Some systems log boot events in:
+`sudo cat /sys/firmware/acpi/tables/BOOT`
+
+or via:
+
+`sudo dmidecode -t system`
+
