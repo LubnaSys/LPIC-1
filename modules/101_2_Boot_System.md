@@ -287,9 +287,9 @@ Upstart uses job definitions (stored in /etc/init/*.conf) and responds to events
 Shows the boot log for the current boot.
 
 For previous boots, use:
-`journalctl --list-boots  # List all boots`
-`journalctl -b -1         # Logs from the previous boot`
-`journalctl -b -2         # Logs from two boots ago`
+`journalctl --list-boots  # List all boots` /n
+`journalctl -b -1         # Logs from the previous boot` /n
+`journalctl -b -2         # Logs from two boots ago` /n
 
 ### 2. Check `dmesg` (Kernel Ring Buffer)
 `dmesg | less`
